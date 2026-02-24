@@ -1,0 +1,25 @@
+﻿@page
+@model _8.Pages.Produtos
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Produtos cadastrados</title>
+</head>
+<body>
+<div>
+    <ul>
+        @foreach (var p in Model.produtos)
+        {
+            <li>Nome: @p.Nome | Preço: @p.Preco</li>
+        }
+    </ul>
+    <span><a href="Index">Voltar a página inicial</a></span>
+</div>
+</body>
+</html>

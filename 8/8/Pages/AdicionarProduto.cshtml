@@ -1,0 +1,37 @@
+﻿@page
+@model _8.Pages.AdicionarProduto
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Adicionar produto</title>
+</head>
+<body>
+<div>
+    <p>Dados do produto:</p>
+    <form method="post">
+        
+        <div>
+            <label asp-for="Produto.Nome">Nome:</label>
+            <input asp-for="Produto.Nome" class="form-control" />
+            <span asp-validation-for="Produto.Nome" class="text-danger"></span>
+        </div>
+        
+        <div>
+            <label asp-for="Produto.Preco">Preco:</label>
+            <input asp-for="Produto.Preco" class="form-control" />
+            <span asp-validation-for="Produto.Preco" class="text-danger"></span>
+        </div>
+        
+        <button type="submit">Adicionar</button>
+    </form>
+    
+    <span><a href="Index">Voltar a página inicial</a></span>
+</div>
+</body>
+</html>
