@@ -1,0 +1,35 @@
+﻿@page
+@model _12.Pages.Cadastrar
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<h2>Dados do novo evento</h2>
+
+<form method="post">
+    <div>
+        <label>Título:</label>
+        <input asp-for="NewEvent.titulo" class="form-control" />
+    </div>
+    
+    <div>
+        <label>Data:</label>
+        <input asp-for="NewEvent.data" type="datetime-local" class="form-control" />
+    </div>
+    
+    <div>
+        <label>Local:</label>
+        <input asp-for="NewEvent.local" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Adicionar evento</button>
+</form>
+</body>
+</html>
