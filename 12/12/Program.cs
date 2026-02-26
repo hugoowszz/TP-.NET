@@ -1,3 +1,5 @@
+using _12.Service;
+
 namespace _12;
 
 public class Program
@@ -8,6 +10,8 @@ public class Program
 
         // Add services to the container.
         builder.Services.AddRazorPages();
+
+        builder.Services.AddScoped<EventService>();
 
         var app = builder.Build();
 
